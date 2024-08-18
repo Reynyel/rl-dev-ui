@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+.slick-prev, .slick-next {
+  color: black; /* Set arrow color */
+  z-index: 1; /* Ensure arrows are on top */
+}
+
+.slick-prev::before, .slick-next::before {
+  font-size: 30px; /* Increase arrow size if needed */
+  color: black; /* Arrow color */
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
