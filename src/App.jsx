@@ -6,6 +6,7 @@ import Header from "./Header";
 import Carousel from "./Carousel";
 import Responsive from "./Responsive";
 import { FooterWithSocialLinks } from "./Footer";
+import Hero from "./Hero";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         </div>
       </div>
 
+      <Hero />
       {/* <Carousel /> */}
 
       <FooterWithSocialLinks />
