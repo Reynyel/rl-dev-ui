@@ -4,12 +4,14 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Header from "./Header";
 import Carousel from "./Carousel";
+import Responsive from "./Responsive";
+import { FooterWithSocialLinks } from "./Footer";
 
 function App() {
   return (
     <>
       <Header />
-      <div className="flex justify-between items-center mx-auto max-w-screen-xl p- flex-wrap h-dvh">
+      <div className="flex justify-center items-center mx-auto max-w-screen-xl flex-wrap h-dvh ">
         <div dir="ltr">
           <div className="flex flex-col max-w-lg me-8 pe-8 items-start text-start">
             <h1 className="text-5xl font-bold mb-4">
@@ -28,15 +30,17 @@ function App() {
             </button>
           </div>
         </div>
-        <div className="flex-auto">
+        <div className="">
           <img
-            className="h-75 w-75"
-            src="/public/images/Hero-Wrapper__image--center.png"
+            src="/images/Hero-Wrapper__image--center.png"
             alt="Team working together"
           />
         </div>
       </div>
-      <Carousel />
+
+      {/* <Carousel /> */}
+
+      <FooterWithSocialLinks />
     </>
   );
 }
