@@ -7,12 +7,13 @@ import Carousel from "./Carousel";
 import Responsive from "./Responsive";
 import { FooterWithSocialLinks } from "./Footer";
 import Hero from "./Hero";
+import CaseStudies from "./Case";
 
 function App() {
   return (
     <>
       <Header />
-      <div className="flex justify-center items-center mx-auto max-w-screen-xl flex-wrap h-dvh ">
+      <div className="pt-16 flex justify-center items-center mx-auto max-w-screen-xl flex-wrap h-dvh ">
         <div dir="ltr">
           <div className="flex flex-col max-w-lg me-8 pe-8 items-start text-start">
             <h1 className="text-5xl font-bold mb-4">
@@ -39,10 +40,14 @@ function App() {
         </div>
       </div>
 
-      <Hero />
+      <div className="mb-16 min-h-screen flex flex-col">
+        <Hero />
+      </div>
+
+      <CaseStudies />
       {/* <Carousel /> */}
 
-      <FooterWithSocialLinks />
+      {/* <FooterWithSocialLinks /> */}
     </>
   );
 }

@@ -1,6 +1,8 @@
+
+
 function Hero() {
   return (
-    <div className="flex justify-center items-center mx-auto max-w-screen-xl flex-wrap h-dvh ">
+    <div className=" flex justify-center items-center mx-auto max-w-screen-xl flex-wrap h-dvh ">
       <div dir="ltr">
         <div className="flex flex-col max-w-lg me-8 pe-8 items-start text-start">
           <hr className="w-48 h-1 mx-auto my-4 bg-purple-600 border-0 rounded md:my-10 dark:bg-gray-700" />
@@ -26,7 +28,7 @@ function Hero() {
       </div>
       <div className="">
         <img src="/images/Abou-us-Video.png" alt="About us video" />
-      </div>
+      </div>      
     </div>
   );
 }
