@@ -8,12 +8,14 @@ import Responsive from "./Responsive";
 import { FooterWithSocialLinks } from "./Footer";
 import Hero from "./Hero";
 import CaseStudies from "./Case";
+import Build from "./Build";
 
 function App() {
   return (
     <>
       <Header />
-      <div className="pt-16 flex justify-center items-center mx-auto max-w-screen-xl flex-wrap h-dvh ">
+      {/* Full viewport height for this section */}
+      <div className="pt-16 flex justify-center items-center mx-auto max-w-screen-xl flex-wrap min-h-screen">
         <div dir="ltr">
           <div className="flex flex-col max-w-lg me-8 pe-8 items-start text-start">
             <h1 className="text-5xl font-bold mb-4">
@@ -40,14 +42,21 @@ function App() {
         </div>
       </div>
 
+      {/* Ensure this section takes up at least the full viewport height */}
       <div className="mb-16 min-h-screen flex flex-col">
         <Hero />
       </div>
 
-      <CaseStudies />
-      {/* <Carousel /> */}
+      <div className="min-h-screen">
+        <CaseStudies />
+      </div>
 
-      {/* <FooterWithSocialLinks /> */}
+      <div className="min-h-screen">
+        <Build />
+      </div>
+
+      {/* Uncomment this if you want a footer */}      
+      <FooterWithSocialLinks />
     </>
   );
 }

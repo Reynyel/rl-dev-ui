@@ -22,16 +22,16 @@ function CaseStudies() {
       fill: "#E7DAED",
     },
   ];
+  
   return (
     <>
-      <div className="flex justify-center items-center mx-auto max-w-screen-xl flex-wrap flex-col">
-        <hr className="w-48 h-1 mx-auto my-4 bg-purple-600 border-0 rounded md:my-10 dark:bg-gray-700" />
+      <div className="flex flex-col justify-center items-center mx-auto max-w-screen-xl py-10">
+        <hr className="w-48 h-1 bg-purple-600 border-0 rounded my-6 md:my-10 dark:bg-gray-700" />
         <h3 className="text-3xl">Our recent</h3>
-        <h3 className="text-4xl my-4">
-          <span className="text-400 font-bold">Case Studies</span>
-        </h3>
+        <h3 className="text-4xl my-4 font-bold">Case Studies</h3>
       </div>
-      <div className="pt-10 flex justify-center items-center mx-auto max-w-full h-[50vh] flex-wrap">
+      
+      <div className="pt-10 flex justify-center items-center mx-auto max-w-full flex-wrap text-start">
         {cards.map((card, index) => (
           <a
             href="#"
